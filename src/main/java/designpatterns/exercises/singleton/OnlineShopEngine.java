@@ -12,9 +12,9 @@ public class OnlineShopEngine {
 
     public void makeOrder(User user) {
         if(user.isGdprAgreed()){
-            System.out.println("#INFO - Order made for " + user.toString());
+            Logger.INSTANCE.info("Order made for " + user.toString());
         } else {
-            System.out.println("#ERROR - User must accept GDPR before making an order.");
+            Logger.INSTANCE.error("User must accept GDPR before making an order.");
         }
     }
 }

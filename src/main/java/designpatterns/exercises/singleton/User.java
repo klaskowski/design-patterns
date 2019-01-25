@@ -6,7 +6,7 @@ public class User {
 
     public User(String name) {
         this.name = name;
-        System.out.println("#WARN - User created, no GDPR agreement so far.");
+        Logger.INSTANCE.warn("User created, no GDPR agreement so far.");
     }
 
     public void setGdprAgreed(boolean gdprAgreed) {
