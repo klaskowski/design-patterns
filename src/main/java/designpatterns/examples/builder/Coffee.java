@@ -6,6 +6,7 @@ public class Coffee {
     String syrup;
     CoffeeSizeEnum coffeeSize;
     boolean containsMilk;
+    String sprinkles;
 
     Coffee(CoffeeSizeEnum coffeeSize) {
         this.coffeeSize = coffeeSize;
@@ -32,6 +33,14 @@ public class Coffee {
         this.sugar = sugar;
         this.syrup = syrup;
         this.containsMilk = containsMilk;
+    }
+
+    Coffee(CoffeeSizeEnum coffeeSize, double sugar, String syrup, boolean containsMilk, String sprinkles) {
+        this.coffeeSize = coffeeSize;
+        this.sugar = sugar;
+        this.syrup = syrup;
+        this.containsMilk = containsMilk;
+        this.sprinkles = sprinkles;
     }
 
     //  Gdy parametry obiektu są opcjonalne, i jest ich bardzo dużo, powstawałaby ogromna liczba kombinacji,

@@ -25,3 +25,9 @@ each method is supposed to print the message with a prefix "error"/"warn"/"info"
 
 4. Consider WebConnector an abstract way of connecting to online services and a factory at the same time. Implement HttpConnector and WebsocketConnector, so that they are concrete implementation of WebConnector. Factory method should decide which implementation to `.create()` based on url - depending if it contains `http:\\` or `websocket:\\`
 + Prove your solution works by unit tests (WebConnectorTest)
+
+## Observable
+
+Na podstawie kodu na tym branchu (pliki w pakiecie `designpatterns.examples.observer`) poprosiłbym was o podobny program, który symulowałby ładowanie pliku. Można stworzyć nowy Timer (obserwowany), który notyfikowałby obserwujących o postępie łądowania (na potrzeby zabawy - co postęp mógłby następować co 100milisekund). Obserwującymi byłyby obiekty ProgressMeter (Wyświetlający na konsoli % ładowania pliku) oraz Notification który wyświetlałby informację "ładowanie zakończone" (gdy progres będzie stuprocentowy).
+
+Zadanie na szóstkę, idealnie trzeba sprawić, by po załadowaniu pliku (100%) zatrzymać ładowanie (tego nie było na zajęciach, można przyjąć różne założenia,  i różnie to zrobić, ciekaw jestem waszych pomysłów).

@@ -23,10 +23,9 @@ public class UserBuilderTest {
 
     @Test
     public void testFullUserCreated(){
-        userBuilder.setAddress("Long Island 42");
-        userBuilder.setAge(56);
-        userBuilder.setPhone("+1489578123");
-        User fullUser = userBuilder.build();
+        User fullUser = userBuilder.setAddress("Long Island 42")
+                .setAge(56)
+                .setPhone("+1489578123").build();
         assertEquals("John", fullUser.getFirstName());
         assertEquals("Lock", fullUser.getLastName());
         assertEquals("Long Island 42", fullUser.getAddress());

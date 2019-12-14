@@ -14,7 +14,7 @@ public class CoffeeBuilder {
     }
 
     public CoffeeBuilder setSugar(double teaspoons){
-        coffee.setSugar(teaspoons);
+        coffee.sugar = teaspoons;
         return this;
     }
 

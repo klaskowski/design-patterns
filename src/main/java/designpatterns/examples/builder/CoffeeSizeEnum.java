@@ -5,6 +5,7 @@ public enum CoffeeSizeEnum {
 
 
     private final String label;
+    public int x;
 
     CoffeeSizeEnum(String label) {
         this.label = label;
@@ -13,5 +14,9 @@ public enum CoffeeSizeEnum {
     @Override
     public String toString() {
         return this.label;
+    }
+
+    public String getDescription() {
+        return "";
     }
 }
